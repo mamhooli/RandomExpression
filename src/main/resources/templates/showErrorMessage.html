@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show Error Message</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+	<!-- <p th:text="'Incorrect answer: expected ' + ${expressionData.actualResult} + ' got ' + ${expressionData.userResult}"></p>-->
+	<p th:text='|Incorrect answer: expected "${expressionData.actualResult}" got "${expressionData.userResult}"|'></p>
+</body>
+</html>
